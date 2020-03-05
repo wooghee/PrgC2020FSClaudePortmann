@@ -4,8 +4,8 @@
 void PrintUsageMessage(void);
 void PrintMultiTable( int tablelimit);
 
-int lowerlimit = 1;
-int upperlimit = 10;
+const int lowerlimit = 1;
+const int upperlimit = 10;
 
 int main(int argc, char* argv[] ){
 		
@@ -36,13 +36,13 @@ int main(int argc, char* argv[] ){
 
 void PrintUsageMessage(void){
 	printf("Usage:  mutiTable wholeNumber\n\t \
-	wholeNumber: ONE integer on the interval [1,10]\n");
+	wholeNumber: ONE integer on the interval [%d,%d]\n", lowerlimit, upperlimit);
 	
 }
 
 void PrintMultiTable( int tablelimit){
     
-	for(int i = tablelimit; i >= 1; i--)
+	for(int i = 1; i <= tablelimit; i++)
 	{
 		for(int j = tablelimit; j >= 1; j--){
 			printf("%d\t", i*j);
