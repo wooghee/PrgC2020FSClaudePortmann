@@ -45,14 +45,14 @@ void PrintPascalTriangle( int tablelimit){
 	for(int i = 0; i < tablelimit; i++)
 	{
 		for(space = 1; space <= tablelimit-i; space++){
-			printf("  ");
+			printf("    ");
 		}
 		for(int j = 0; j <= i; j++){
 			if ( j == 0 || i == 0){
 				}else{
 				number = number*(i-j+1)/j;
 				}
-			printf("%4d", number);
+			printf("%8d", number);
 		}
 		printf("\n");		
 	}
