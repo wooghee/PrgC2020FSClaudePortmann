@@ -6,7 +6,6 @@ void PrintPascalTriangle( int tablelimit);
 
 int lowerlimit = 1;
 int upperlimit = 20;
-
 int space = 1;
 int number = 1;
 
@@ -36,11 +35,9 @@ int main(int argc, char* argv[] ){
 	return 0;
 }
 
-
 void PrintUsageMessage(void){
 	printf("Usage:  pascalTriangle wholeNumber\n\t \
 	wholeNumber: ONE integer on the interval [%d,%d]\n", lowerlimit, upperlimit);
-	
 }
 
 void PrintPascalTriangle( int tablelimit){
@@ -60,10 +57,3 @@ void PrintPascalTriangle( int tablelimit){
 		printf("\n");		
 	}
 }
-
-
-
-
-
-
-
